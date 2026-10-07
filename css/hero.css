@@ -1,10 +1,10 @@
 .hero {
-  min-height: calc(100vh - 86px);
+  min-height: auto;
   grid-template-columns: minmax(0, 1.05fr) minmax(360px, .8fr);
   align-items: center;
-  gap: clamp(55px, 8vw, 130px);
-  padding-top: 54px;
-  padding-bottom: 54px;
+  gap: clamp(40px, 6vw, 90px);
+  padding-top: 36px;
+  padding-bottom: 32px;
   overflow: hidden;
 }
 
@@ -32,13 +32,12 @@
 }
 
 .hero h1 {
-  display: flex;
-  flex-direction: column;
   margin: 0;
-  font-size: clamp(54px, 6.7vw, 94px);
+  font-size: clamp(23px, 3.35vw, 47px);
   font-weight: 600;
   line-height: .91;
   letter-spacing: -.075em;
+  white-space: nowrap;
 }
 
 .hero h1 span {
@@ -74,7 +73,7 @@
 .hero-portrait-scene {
   position: relative;
   width: min(100%, 430px);
-  min-height: 570px;
+  min-height: 520px;
   justify-self: end;
   isolation: isolate;
 }
@@ -133,6 +132,66 @@
   inset: 0 22px 0 30px;
 }
 
+.hero-tech-icons {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.hero-tech-icon {
+  position: absolute;
+  display: grid;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  border: 1px solid rgba(17, 17, 17, .1);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, .9);
+  color: var(--blue);
+  box-shadow: 0 14px 35px rgba(17, 17, 17, .12);
+  backdrop-filter: blur(12px);
+}
+
+.hero-tech-icon svg {
+  width: 25px;
+  height: 25px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.hero-tech-icon svg circle {
+  fill: currentColor;
+  stroke: none;
+}
+
+.icon-react {
+  top: 78px;
+  left: 7px;
+  transform: rotate(-8deg);
+}
+
+.icon-code {
+  top: 214px;
+  right: -5px;
+  transform: rotate(7deg);
+}
+
+.icon-terminal {
+  bottom: 112px;
+  left: 0;
+  transform: rotate(6deg);
+}
+
+.icon-database {
+  right: 20px;
+  bottom: 65px;
+  transform: rotate(-7deg);
+}
+
 .hero-photo .portrait {
   height: 100%;
   overflow: visible;
@@ -187,7 +246,7 @@
   }
 
   .hero-portrait-scene {
-    min-height: 510px;
+    min-height: 480px;
   }
 }
 
@@ -195,12 +254,12 @@
   .hero {
     min-height: auto;
     grid-template-columns: 1fr .78fr;
-    padding-top: 55px;
-    padding-bottom: 45px;
+    padding-top: 40px;
+    padding-bottom: 32px;
   }
 
   .hero h1 {
-    font-size: clamp(47px, 7.5vw, 68px);
+    font-size: clamp(23px, 3.7vw, 31px);
   }
 
   .hero-description {
@@ -208,12 +267,23 @@
   }
 
   .hero-portrait-scene {
-    min-height: 450px;
+    min-height: 420px;
   }
 
   .hero-monogram {
     top: 108px;
     font-size: 150px;
+  }
+
+  .hero-tech-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 13px;
+  }
+
+  .hero-tech-icon svg {
+    width: 22px;
+    height: 22px;
   }
 }
 
@@ -221,9 +291,9 @@
   .hero {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 24px;
-    padding-top: 40px;
-    padding-bottom: 30px;
+    gap: 16px;
+    padding-top: 28px;
+    padding-bottom: 20px;
   }
 
   .hero-copy {
@@ -235,7 +305,7 @@
   }
 
   .hero h1 {
-    font-size: clamp(48px, 14vw, 72px);
+    font-size: clamp(20px, 6.2vw, 31px);
   }
 
   .hero-role {
@@ -250,7 +320,7 @@
 
   .hero-portrait-scene {
     width: min(100%, 390px);
-    min-height: 475px;
+    min-height: 420px;
     margin: 0 auto;
     justify-self: center;
   }
@@ -269,6 +339,24 @@
     height: 145px;
   }
 
+  .icon-react {
+    left: 10px;
+  }
+
+  .icon-code {
+    right: 3px;
+  }
+
+  .icon-terminal {
+    left: 5px;
+    bottom: 96px;
+  }
+
+  .icon-database {
+    right: 17px;
+    bottom: 54px;
+  }
+
   .hero-monogram {
     left: 0;
     font-size: 145px;
@@ -277,11 +365,11 @@
 
 @media (max-width: 410px) {
   .hero h1 {
-    font-size: 46px;
+    font-size: clamp(20px, 6.2vw, 25px);
   }
 
   .hero-portrait-scene {
-    min-height: 430px;
+    min-height: 390px;
   }
 }
 
