@@ -1,0 +1,47 @@
+.media img {
+  transition: opacity .25s ease;
+}
+
+.media img.pending {
+  opacity: 0;
+}
+
+.media img.fit-contain {
+  object-fit: contain;
+  padding: clamp(28px, 6vw, 74px);
+  background: linear-gradient(145deg, #f5f5f1, #e9e9e2);
+}
+
+.modal-cover img.fit-contain {
+  padding: clamp(45px, 9vw, 110px);
+}
+
+.art-8 {
+  background: #e9f3ec;
+}
+
+.art-9 {
+  background: #f3e6e1;
+}
+
+.art-10 {
+  background: #e6e2d9;
+}
+
+.art-11 {
+  background: #dce8e9;
+}
+
+.art-12 {
+  background: #e8e6df;
+}
+
+.art-13 {
+  background: #e4e9ed;
+}
+
+@media (max-width: 650px) {
+  .media img.fit-contain {
+    padding: 34px;
+  }
+}

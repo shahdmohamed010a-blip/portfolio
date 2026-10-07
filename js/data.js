@@ -2,22 +2,21 @@
 // Keep missing links as '#'; the interface hides their actions automatically.
 const personalInfo = {
   name: 'Shahd M. Abo-Elmkarem', title: 'Full-Stack Web Developer',
-  email: 'shahdadly560@gmail.com', phone: '01153454413', phoneInternational: '+201153454413', location: 'Beni Suef, Egypt',
-  photo: 'assets/images/profile/shahd-profile.jpg', cvUrl: '#', canonicalUrl: '#', socialImage: '#',
+  email: 'shahdadly5602@gmail.com', phone: '01029668470', phoneInternational: '+201029668470', location: 'Beni Suef, Egypt',
+  photo: 'assets/images/profile/shahd-profile-cutout.png', cvUrl: '#', canonicalUrl: '#', socialImage: '#',
   headline: 'Building Web Experiences & Intelligent Digital Solutions.', headlineHighlight: 'Web Experiences',
   tagline: 'Building modern web applications, scalable backend systems, and intelligent automation solutions.',
-  description: 'Full-Stack Web Developer focused on React.js, Next.js, PHP/Laravel, Node.js, REST APIs, and modern business solutions, with additional experience in AI automation, prompt engineering, and Odoo.',
+  description: 'I build modern web products from polished, responsive interfaces to reliable backend systems, APIs, and databases using React.js, Next.js, Laravel, and Node.js.',
   coreStack: ['React.js', 'Next.js', 'PHP / Laravel', 'Node.js', 'REST APIs'],
-  badges: ['Full-Stack', 'AI Automation', 'Odoo'],
-  about: ['I’m a Full-Stack Web Developer with hands-on experience building modern web applications, backend systems, REST APIs, and business automation solutions.', 'My experience spans React.js, Next.js, PHP/Laravel, Node.js, databases, API integrations, Odoo ERP, and AI-powered automation.', 'I started my professional journey in AI Automation, transitioned into Web Development, and progressed into a Web Development & Operations Supervisor role, combining technical development with team leadership, project coordination, marketing support, and business operations.']
+  badges: ['Full-Stack', 'AI Automation'],
+  about: ['I’m a Full-Stack Web Developer with hands-on experience building modern web applications, backend systems, REST APIs, and business automation solutions.', 'My experience spans React.js, Next.js, PHP/Laravel, Node.js, databases, API integrations, and AI-powered automation.', 'I started my professional journey in AI Automation, transitioned into Web Development, and progressed into a Web Development & Operations Supervisor role, combining technical development with team leadership, project coordination, marketing support, and business operations.']
 };
-const socialLinks = [{label: 'GitHub', url: '#'}, {label: 'LinkedIn', url: '#'}];
+const socialLinks = [{label: 'GitHub', url: '#'}, {label: 'LinkedIn', url: 'https://www.linkedin.com/in/shahd-m-abo-elmkarem-8abb09277'}];
 const skills = [
   {name:'Frontend', icon:'⌘', items:['React.js','Next.js','JavaScript','HTML5','CSS3','Tailwind CSS','Bootstrap','React Router','Axios']},
   {name:'Backend', icon:'{ }', items:['PHP','Laravel','Node.js','Express.js','REST APIs']},
   {name:'Database', icon:'▤', items:['MySQL','SQL','SQL Server']},
   {name:'AI & Automation', icon:'✳', items:['Prompt Engineering','LLM Integration','AI Agents','n8n','OpenAI API','LangChain','AI Workflow Automation','API Automation']},
-  {name:'ERP', icon:'◇', items:['Odoo','ERP Workflows','Business Process Automation','Odoo Customization']},
   {name:'Tools', icon:'↗', items:['Git','GitHub','API Testing','Debugging']}
 ];
 const experience = [
@@ -27,12 +26,12 @@ const experience = [
 ];
 const projects = [
   {id:1,title:'Web Application Project',category:'Full-Stack',categories:['Web Development','Full-Stack'],type:'Web Application',description:'A full-stack web application project. Detailed scope, screenshots, and implementation notes will be added with the final project materials.',technologies:['React.js','Laravel','MySQL','REST API'],featured:true},
-  {id:2,title:'AI Automation Platform',category:'AI & Automation',categories:['AI & Automation'],type:'Automation Platform',description:'An AI automation project. Workflow details and demonstrations will be added with the final project materials.',technologies:['n8n','LLM','OpenAI API','REST APIs','Prompt Engineering'],featured:true},
-  {id:3,title:'Odoo ERP Project 01',category:'Odoo',categories:['Odoo'],type:'ERP Project',description:'A practical Odoo ERP project. Business workflow scope and screenshots will be added with the final project materials.',technologies:['Odoo','ERP','Business Workflow Automation']},
-  {id:4,title:'Odoo ERP Project 02',category:'Odoo',categories:['Odoo'],type:'ERP Project',description:'A second practical Odoo ERP project. Configuration and process details will be added with the final project materials.',technologies:['Odoo','ERP','Business Process Automation']},
-  {id:5,title:'Amazon Category Sales Dashboard',category:'Dashboard',categories:['Dashboards'],type:'Business Intelligence',description:'A sales dashboard project. Analysis scope and dashboard screenshots will be added with the final project materials.',technologies:['Power BI','Data Analysis','Business Intelligence']},
-  {id:6,title:'Spotify Analysis & Visualization',category:'Dashboard / Data',categories:['Dashboards'],type:'Data Visualization',description:'A Spotify data analysis and visualization project. Dataset context and visualizations will be added with the final project materials.',technologies:['Python','Data Visualization','Data Analysis']},
-  {id:7,title:'AI-Powered Job Market Analysis',category:'AI / Data',categories:['AI & Automation','Dashboards'],type:'Data Analysis',description:'An AI-powered job market analysis project. Methods and findings will be added with the final project materials.',technologies:['Python','Data Analysis','AI']}
+  {id:8,title:'Hallil — Education Management Platform',category:'EdTech',categories:['Web Development','Full-Stack'],type:'Education Platform',description:'An Arabic platform for teachers and schools across Gulf markets, supporting exam creation, certificate generation, and structured learning-content management.',technologies:['React.js','Education Platform','Content Management','Arabic UX'],image:'https://7ll.tek-part.com/logo/nav_logo.png',imageFit:'contain',gallery:[],liveUrl:'https://7ll.tek-part.com/',mark:'ح'},
+  {id:9,title:'Vovalla',category:'E-Commerce',categories:['Web Development','Full-Stack'],type:'Beauty & Fashion Store',description:'A beauty, personal care, and fashion e-commerce storefront focused on elegant product discovery and responsive shopping flows.',technologies:['React.js','E-Commerce','Responsive UI','Product Catalog'],image:'https://vovalla.tek-part.com/logo.jpg',imageFit:'contain',gallery:[],liveUrl:'https://vovalla.tek-part.com/',mark:'V'},
+  {id:10,title:'Watchcollector',category:'Luxury E-Commerce',categories:['Web Development','Full-Stack'],type:'Luxury Watch Platform',description:'A premium platform for rare and collectible watches, combining cinematic storytelling, multilingual browsing, and refined commerce flows.',technologies:['React.js','E-Commerce','Multilingual UX','Responsive UI'],image:'https://thewatchcollector1.com/images/dark-logo.jpeg',imageFit:'contain',gallery:[],liveUrl:'https://thewatchcollector1.com/',mark:'W'},
+  {id:11,title:'Dolphin Food Industries',category:'B2B Website',categories:['Web Development','Full-Stack'],type:'Food Supply Platform',description:'A bilingual B2B website presenting frozen meat and poultry products to restaurants, hotels, and distributors across Egypt.',technologies:['React.js','Bilingual UX','B2B Website','Responsive UI'],image:'https://dolphin-factory.com/media/hero-premium.webp',gallery:[],liveUrl:'https://dolphin-factory.com/ar',mark:'D'},
+  {id:12,title:'Pro Damac General Trading',category:'Corporate Website',categories:['Web Development','Full-Stack'],type:'B2B Corporate Platform',description:'A bilingual corporate website for a leading Kuwait general trading company, presenting supply, installation, and maintenance services for the general contracting sector.',technologies:['React.js','Bilingual UX','B2B Website','Responsive UI'],image:'https://demo.prodamac.com/brand/hero-poster-768.webp',gallery:[],liveUrl:'https://demo.prodamac.com/en',mark:'P'},
+  {id:13,title:'Pro Damac Store',category:'E-Commerce',categories:['Web Development','Full-Stack'],type:'Electrical & Mechanical Store',description:'An online storefront for electrical and mechanical products from global brands, designed for clear product discovery and responsive commerce experiences.',technologies:['React.js','E-Commerce','Product Catalog','Bilingual UX'],image:'https://prodamac.store.tek-part.com/static/icon.png',imageFit:'contain',gallery:[],liveUrl:'https://prodamac.store.tek-part.com/',mark:'P'}
 ].map(p=>({image:`assets/images/projects/project-${p.id}-cover.webp`,gallery:[`assets/images/projects/project-${p.id}-1.webp`,`assets/images/projects/project-${p.id}-2.webp`],liveUrl:'#',githubUrl:'#',caseStudyUrl:'#',videoUrl:'#',...p}));
 // Replace each project image with your actual project screenshot. Override gallery/URLs above as needed.
 const services = [
@@ -40,22 +39,20 @@ const services = [
   {title:'Frontend Development',description:'Responsive and interactive interfaces with modern component-based development.'},
   {title:'Backend & API Development',description:'Scalable REST APIs, authentication, databases, integrations, and backend systems.'},
   {title:'AI Automation',description:'AI-powered workflows, LLM integrations, n8n automation, and intelligent business processes.'},
-  {title:'Odoo ERP Solutions',description:'Odoo configuration, workflows, business process automation, and ERP solutions.'},
   {title:'Technical & Operations Supervision',description:'Team coordination, project planning, workflow management, and technical operations.'}
 ];
 const certifications = [
   {title:'AI Diploma',organization:'Instant'}, {title:'Business English',organization:'Digital Egypt Pioneers Initiative'},
-  {title:'Data Science',organization:'MCIT / EYouth / DEPI'}, {title:'AI & Data Science Training',organization:'Instant'}, {title:'Odoo ERP Course',organization:'Udemy'}
+  {title:'Data Science',organization:'MCIT / EYouth / DEPI'}, {title:'AI & Data Science Training',organization:'Instant'}
 ].map((c,i)=>({date:'',image:`assets/images/certificates/certificate-${i+1}.webp`,url:'#',...c}));
 const content = {
   navigation:['Home','About','Skills','Experience','Projects','Services','Contact'],
-  headings:{about:['01 / THE PERSON BEHIND THE CODE','A developer’s mindset. A broader perspective.'],skills:['02 / MY TOOLKIT','The right tools. Thoughtfully connected.'],experience:['03 / THE JOURNEY','Growing through building.'],projects:['04 / SELECTED WORK','Ideas, brought to life.'],services:['05 / WHAT I CAN HELP WITH','From interface to infrastructure.'],certifications:['09 / CONTINUOUS LEARNING','Always building on what I know.']},
-  projectIntro:'Web applications, intelligent workflows, and business systems. A selection of my work across the stack.',
-  filters:['All','Web Development','Full-Stack','AI & Automation','Odoo','Dashboards'],
+  headings:{about:['01 / THE PERSON BEHIND THE CODE','A developer’s mindset. A broader perspective.'],skills:['02 / MY TOOLKIT','The right tools. Thoughtfully connected.'],experience:['03 / THE JOURNEY','Growing through building.'],projects:['04 / SELECTED WORK','Ideas, brought to life.'],services:['05 / WHAT I CAN HELP WITH','From interface to infrastructure.'],certifications:['08 / CONTINUOUS LEARNING','Always building on what I know.']},
+  projectIntro:'Live web applications, e-commerce experiences, and business platforms built for real users.',
+  filters:['All','Web Development','Full-Stack'],
   aiTitle:'Where Web Development Meets AI', aiText:'I combine modern web development with AI automation to build applications that are not only functional, but intelligent and efficient.',
   aiSkills:['Prompt Engineering','LLM Integration','AI Agents','n8n Automation','API Integration','Business Process Automation'],
   workflow:[['User','An action starts the process.'],['Web Application','A clear interface captures the request.'],['REST API','The request connects to backend services.'],['AI / LLM','A model processes the context.'],['Automation Workflow','Connected steps coordinate the work.'],['Business System','The result reaches the business workflow.']],
-  odooTitle:'ERP & Odoo',odooText:'Hands-on Odoo experience supported by dedicated training and practical projects, focused on ERP workflows, business processes, customization, and automation.',odooSkills:['Odoo ERP','Business Workflows','ERP Automation','Module Configuration','API Integration'],
   leadershipTitle:'Beyond Development',leadershipText:'Alongside technical development, I have experience supervising multidisciplinary teams and coordinating development, AI, marketing, sales, HR, and creative activities.',leadershipSkills:['Team Supervision','Project Coordination','Marketing Coordination','Operations Management','KPI Tracking','Cross-Functional Collaboration'],
   contactTitle:'Let’s Build Something Great', contactText:'Have a project, opportunity, or idea? Let’s talk.', copyrightYear:2026
 };
