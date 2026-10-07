@@ -3,7 +3,7 @@
 const personalInfo = {
   name: 'Shahd Mohamed Abo-Elmkarem', title: 'Full-Stack Web Developer',
   email: 'shahdadly5602@gmail.com', phone: '01029668470', phoneInternational: '+201029668470', location: 'Beni Suef, Egypt',
-  photo: 'assets/images/profile/shahd-profile-cutout.png', cvUrl: '#', canonicalUrl: '#', socialImage: '#',
+  photo: 'assets/images/profile/shahd-profile-cutout.png', cvUrl: '#', canonicalUrl: 'https://shahdmohamed010a-blip.github.io/portfolio/', socialImage: '#',
   headline: 'Building Web Experiences & Intelligent Digital Solutions.', headlineHighlight: 'Web Experiences',
   tagline: 'Building modern web applications, scalable backend systems, and intelligent automation solutions.',
   description: 'I build modern web products from polished, responsive interfaces to reliable backend systems, APIs, and databases using React.js, Next.js, Laravel, and Node.js.',

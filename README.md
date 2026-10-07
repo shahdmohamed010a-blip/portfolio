@@ -1,38 +1,63 @@
-# Shahd — Full-Stack Developer Portfolio
+# Shahd Mohamed Abo-Elmkarem — Portfolio
 
-A responsive static portfolio built with semantic HTML, CSS, and vanilla JavaScript. No build tools or backend required.
+A responsive static portfolio built with semantic HTML, CSS, and vanilla JavaScript. It has no framework, package installation, backend, or build step.
+
+## Project structure
+
+```text
+.
+├── .github/workflows/pages.yml   # Automatic GitHub Pages deployment
+├── assets/
+│   ├── icons/
+│   └── images/
+├── css/
+│   ├── style.css
+│   ├── responsive.css
+│   ├── hero.css
+│   ├── projects.css
+│   ├── footer.css
+│   └── mobile.css
+├── js/
+│   ├── data.js                   # Portfolio content and links
+│   └── main.js                   # Rendering and interactions
+├── index.html
+├── robots.txt
+└── sitemap.xml
+```
 
 ## Run locally
 
-Serve this folder with a local development server, such as VS Code Live Server, or run `python -m http.server 8000` from this folder and open http://localhost:8000. Internet access is needed for Google Fonts; system fonts provide a fallback.
+From the repository root:
+
+```bash
+python -m http.server 4173
+```
+
+Then open `http://127.0.0.1:4173/`.
 
 ## Edit content
 
-All portfolio content lives in `js/data.js`. Update `personalInfo`, `skills`, `experience`, `projects`, `services`, `certifications`, `socialLinks`, and `content`. The rendering code is in `js/main.js`; styling is in `css/style.css` and `css/responsive.css`.
+Most content is in `js/data.js`, including profile information, skills, experience, projects, services, social links, and the public site URL. Layout and interactions are in `js/main.js`; styles are split by area under `css/`.
 
-- Photo: add `assets/images/profile/shahd-profile.jpg`, or update `personalInfo.photo`. No fake portrait is supplied.
-- Project images: add `assets/images/projects/project-1-cover.webp` and screenshots such as `project-1-1.webp`. Repeat for each project or change its paths. Missing images show intentional placeholder blocks.
-- Project links: replace `liveUrl`, `githubUrl`, and `caseStudyUrl` with actual URLs. `#` and empty values hide buttons.
-- Video/demo: set an optional `videoUrl` to a real hosted demo URL; it appears as a Watch demo link.
-- CV: place your PDF under `assets/` and set `personalInfo.cvUrl`, for example `assets/shahd-cv.pdf`.
-- Social links: replace each `socialLinks` URL with your GitHub/LinkedIn profile URL.
-- New project: add an object to the `projects` array with a unique ID, title, category, `categories` array, type, description, technologies, and optional featured flag. The final `.map()` provides standard image paths and placeholder links. Set image, gallery, liveUrl, githubUrl, caseStudyUrl, and videoUrl directly on an entry to override its defaults.
-- Certificates: add entries to `certifications`, with title, organization, optional date, image, and URL. Custom image, date, and URL fields on an entry override the defaults. Real certificate images automatically enable preview buttons; real URLs show certificate links.
-- SEO: set `personalInfo.canonicalUrl` to the final public HTTPS URL and `socialImage` to an absolute public image URL. Unconfigured values are omitted. Update static metadata in `index.html` if changing your professional positioning.
+All asset paths are relative so the site works correctly from the GitHub Pages repository subdirectory.
 
-Asset paths are relative so deployment in a subdirectory works. Use optimized WebP project images; keep filenames matched to the configuration. Do not supply sensitive content in this public configuration.
+## Publish with GitHub Pages
 
-## Behavior
+1. Make the GitHub repository **Public**.
+2. Open **Settings → Pages**.
+3. Under **Build and deployment**, select **GitHub Actions** as the source.
+4. Push to `main`.
+5. The workflow in `.github/workflows/pages.yml` publishes the site automatically.
 
-Projects support category filtering, detail dialogs, screenshot lightboxes, and optional links. Native dialogs provide keyboard focus containment and Escape behavior. Missing screenshots cannot open lightboxes. Navigation works on mobile and highlights visible sections. Animation respects reduced-motion preferences.
+Expected live URL:
 
-The contact form validates required fields and email format, then opens an email draft via `mailto:`. It does not send messages or claim delivery. A configured email app is required; the direct email link remains available. Integrate a form endpoint if server-side delivery is wanted later.
+`https://shahdmohamed010a-blip.github.io/portfolio/`
 
-## Deploy
+The workflow can also be started manually from the repository’s **Actions** tab.
 
-Upload the folder to any static host, such as GitHub Pages, Netlify, or Cloudflare Pages. Use the repository root as the publish directory, with no build command. Configure the final canonical and social image URLs before public release. Add real CV, screenshots, certificates, and links when available, then verify them on the deployed domain.
+## Public repository checklist
 
-## Review checklist
-
-Check widths 1440, 1280, 1024, 768, 430, 390, and 375 pixels; filter each project category; open/close dialogs with keyboard and Escape; replace an image to confirm gallery previews; check CV/social/project links; test email drafts using your preferred email client. No project metrics, testimonials, clients, or URLs have been fabricated.
-
+- Contact email and phone number in `js/data.js` are intentionally public.
+- Do not commit API keys, passwords, private documents, or environment files.
+- Replace any external project image URL if its owner does not allow hotlinking.
+- Update `canonicalUrl`, `robots.txt`, and `sitemap.xml` if the final domain changes.
