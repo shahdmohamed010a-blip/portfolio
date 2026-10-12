@@ -1,23 +1,45 @@
 // Edit this file to update portfolio content. Replace image paths with your real assets.
 // Keep missing links as '#'; the interface hides their actions automatically.
 const personalInfo = {
-  name: 'Shahd Mohamed Abo-Elmkarem', title: 'Full-Stack Web Developer',
+  name: 'Shahd Mohamed Abo-Elmkarem', title: 'Junior Full-Stack Web Developer',
   email: 'shahdadly5602@gmail.com', phone: '01029668470', phoneInternational: '+201029668470', location: 'Beni Suef, Egypt',
-  photo: 'assets/images/profile/shahd-profile-cutout.png', cvUrl: '#', canonicalUrl: 'https://shahdmohamed010a-blip.github.io/portfolio/', socialImage: '#',
+  photo: 'assets/images/profile/shahd-profile-original-cutout.png', cvUrl: '#', canonicalUrl: 'https://shahdmohamed010a-blip.github.io/portfolio/', socialImage: '#',
   headline: 'Building Web Experiences & Intelligent Digital Solutions.', headlineHighlight: 'Web Experiences',
   tagline: 'Building modern web applications, scalable backend systems, and intelligent automation solutions.',
   description: 'I build modern web products from polished, responsive interfaces to reliable backend systems, APIs, and databases using React.js, Next.js, Laravel, and Node.js.',
   coreStack: ['React.js', 'Next.js', 'PHP / Laravel', 'Node.js', 'REST APIs'],
   badges: ['Full-Stack', 'AI Automation'],
-  about: ['I’m a Full-Stack Web Developer with hands-on experience building modern web applications, backend systems, REST APIs, and business automation solutions.', 'My experience spans React.js, Next.js, PHP/Laravel, Node.js, databases, API integrations, and AI-powered automation.', 'I started my professional journey in AI Automation, transitioned into Web Development, and progressed into a Web Development & Operations Supervisor role, combining technical development with team leadership, project coordination, marketing support, and business operations.']
+  about: ['I’m a Junior Full-Stack Web Developer with hands-on experience building modern web applications, backend systems, REST APIs, and business automation solutions.', 'My experience spans React.js, Next.js, PHP/Laravel, Node.js, databases, API integrations, and AI-powered automation.', 'I started my professional journey in AI Automation, transitioned into Web Development, and progressed into a Web Development & Operations Supervisor role, combining technical development with team leadership, project coordination, marketing support, and business operations.']
 };
 const socialLinks = [{label: 'GitHub', url: '#'}, {label: 'LinkedIn', url: 'https://www.linkedin.com/in/shahd-m-abo-elmkarem-8abb09277'}];
 const skills = [
-  {name:'Frontend', icon:'⌘', items:['React.js','Next.js','JavaScript','HTML5','CSS3','Tailwind CSS','Bootstrap','React Router','Axios']},
-  {name:'Backend', icon:'{ }', items:['PHP','Laravel','Node.js','Express.js','REST APIs']},
-  {name:'Database', icon:'▤', items:['MySQL','SQL','SQL Server']},
-  {name:'AI & Automation', icon:'✳', items:['Prompt Engineering','LLM Integration','AI Agents','n8n','OpenAI API','LangChain','AI Workflow Automation','API Automation']},
-  {name:'Tools', icon:'↗', items:['Git','GitHub','API Testing','Debugging']}
+  {name:'React.js', icon:'assets/icons/skills/react.svg', category:'Frontend'},
+  {name:'Next.js', icon:'assets/icons/skills/nextdotjs.svg', category:'Frontend'},
+  {name:'JavaScript', icon:'assets/icons/skills/javascript.svg', category:'Programming'},
+  {name:'HTML5', icon:'assets/icons/skills/html5.svg', category:'Frontend'},
+  {name:'CSS3', icon:'assets/icons/skills/css.svg', category:'Frontend'},
+  {name:'Tailwind CSS', icon:'assets/icons/skills/tailwindcss.svg', category:'Frontend'},
+  {name:'Bootstrap', icon:'assets/icons/skills/bootstrap.svg', category:'Frontend'},
+  {name:'React Router', icon:'assets/icons/skills/reactrouter.svg', category:'Frontend'},
+  {name:'Axios', icon:'assets/icons/skills/axios.svg', category:'Frontend'},
+  {name:'PHP', icon:'assets/icons/skills/php.svg', category:'Backend'},
+  {name:'Laravel', icon:'assets/icons/skills/laravel.svg', category:'Backend'},
+  {name:'Node.js', icon:'assets/icons/skills/nodedotjs.svg', category:'Backend'},
+  {name:'Express.js', icon:'assets/icons/skills/express.svg', category:'Backend'},
+  {name:'REST APIs', icon:'assets/icons/skills/rest-api.svg', category:'Backend'},
+  {name:'MySQL', icon:'assets/icons/skills/mysql.svg', category:'Database'},
+  {name:'SQL Server', icon:'assets/icons/skills/microsoftsqlserver.svg', category:'Database'},
+  {name:'Prompt Engineering', icon:'assets/icons/skills/prompt-engineering.svg', category:'AI & Automation'},
+  {name:'LLM Integration', icon:'assets/icons/skills/llm-integration.svg', category:'AI & Automation'},
+  {name:'AI Agents', icon:'assets/icons/skills/ai-agents.svg', category:'AI & Automation'},
+  {name:'n8n', icon:'assets/icons/skills/n8n.svg', category:'Automation'},
+  {name:'OpenAI API', icon:'assets/icons/skills/openai.svg', category:'AI & Automation'},
+  {name:'LangChain', icon:'assets/icons/skills/langchain.svg', category:'AI & Automation'},
+  {name:'Workflow Automation', icon:'assets/icons/skills/workflow-automation.svg', category:'Automation'},
+  {name:'Git', icon:'assets/icons/skills/git.svg', category:'Tools'},
+  {name:'GitHub', icon:'assets/icons/skills/github.svg', category:'Tools'},
+  {name:'API Testing', icon:'assets/icons/skills/postman.svg', category:'Tools'},
+  {name:'Debugging', icon:'assets/icons/skills/debugging.svg', category:'Tools'}
 ];
 const experience = [
   {title:'Web Development & Operations Supervisor', date:'Dec 2025 – Present', company:'Tarawud', location:'Beni Suef, Egypt', responsibilities:['Develop and maintain web applications using React.js, Next.js, PHP/Laravel, and Node.js.','Build responsive and reusable frontend interfaces.','Develop and integrate RESTful APIs.','Work with databases and backend business logic.','Supervise multidisciplinary teams.','Coordinate development, AI, marketing, sales, and creative activities.','Manage priorities, deliverables, and project progress.','Support project planning and technical decision-making.','Coordinate technical and non-technical teams.','Support marketing and business operations.']},
@@ -33,8 +55,11 @@ const projects = [
   {id:9,title:'Vovalla',category:'E-Commerce',categories:['Web Development','Full-Stack'],type:'Beauty & Fashion Store',description:'A beauty, personal care, and fashion e-commerce storefront focused on elegant product discovery and responsive shopping flows.',technologies:['React.js','E-Commerce','Responsive UI','Product Catalog'],image:'https://vovalla.tek-part.com/logo.jpg',imageFit:'contain',gallery:[],liveUrl:'https://vovalla.tek-part.com/',mark:'V'},
   {id:10,title:'Watchcollector',category:'Luxury E-Commerce',categories:['Web Development','Full-Stack'],type:'Luxury Watch Platform',description:'A premium platform for rare and collectible watches, combining cinematic storytelling, multilingual browsing, and refined commerce flows.',technologies:['React.js','E-Commerce','Multilingual UX','Responsive UI'],image:'https://thewatchcollector1.com/images/dark-logo.jpeg',imageFit:'contain',gallery:[],liveUrl:'https://thewatchcollector1.com/',mark:'W'},
   {id:11,title:'Dolphin Food Industries',category:'B2B Website',categories:['Web Development','Full-Stack'],type:'Food Supply Platform',description:'A bilingual B2B website presenting frozen meat and poultry products to restaurants, hotels, and distributors across Egypt.',technologies:['React.js','Bilingual UX','B2B Website','Responsive UI'],image:'https://dolphin-factory.com/media/hero-premium.webp',gallery:[],liveUrl:'https://dolphin-factory.com/ar',mark:'D'}
-].map(p=>({image:`assets/images/projects/project-${p.id}-cover.webp`,gallery:[`assets/images/projects/project-${p.id}-1.webp`,`assets/images/projects/project-${p.id}-2.webp`],liveUrl:'#',githubUrl:'#',caseStudyUrl:'#',videoUrl:'#',...p}));
-// Replace each project image with your actual project screenshot. Override gallery/URLs above as needed.
+].map(p=>({
+  ...p,
+  gallery:[`assets/images/projects/project-${p.id}-cover.webp`,...Array.from({length:({14:3,15:3,12:3,13:2,8:0,9:3,10:2,11:3})[p.id]||0},(_,i)=>`assets/images/projects/project-${p.id}-${i+1}.webp`)],
+  githubUrl:'#',caseStudyUrl:'#',videoUrl:'#'
+}));
 const services = [
   {title:'Full-Stack Web Development',description:'Modern web applications built with React.js, Next.js, PHP/Laravel, and Node.js.'},
   {title:'Frontend Development',description:'Responsive and interactive interfaces with modern component-based development.'},

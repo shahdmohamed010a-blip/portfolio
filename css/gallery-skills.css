@@ -1,0 +1,103 @@
+/* Skills toolkit — individual cells inspired by the supplied reference. */
+#skills .section-heading {
+  margin-bottom: 54px;
+}
+
+#skills .section-heading h2 {
+  max-width: 880px;
+  font-size: clamp(38px, 5vw, 68px);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.skill-card {
+  min-height: 168px;
+  padding: 28px 24px 22px;
+  border: 0;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  transition: background-color .25s ease, box-shadow .25s ease, transform .25s ease;
+}
+
+.skill-card:hover {
+  position: relative;
+  z-index: 1;
+  background: var(--white);
+  border-color: var(--line);
+  box-shadow: 0 18px 45px rgba(17, 21, 19, .09);
+  transform: translateY(-5px);
+}
+
+.skill-icon {
+  width: 42px;
+  height: 42px;
+  margin-bottom: auto;
+  display: grid;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--blue) 35%, var(--line));
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--blue) 7%, transparent);
+}
+
+.skill-icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.skill-card h3 {
+  margin: 18px 0 5px;
+  font-size: 16px;
+  letter-spacing: -.02em;
+}
+
+.skill-card p {
+  color: var(--muted);
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1100px) {
+  .skills-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+@media (max-width: 850px) {
+  .skills-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 650px) {
+  #skills .section-heading { margin-bottom: 34px; }
+  #skills .section-heading h2 { font-size: 36px; }
+  .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; }
+  .skill-card {
+    display: flex;
+    grid-template-columns: none;
+    min-height: 150px;
+    padding: 20px 17px 17px;
+  }
+  .skill-icon {
+    grid-row: auto;
+    width: 37px;
+    height: 37px;
+    padding: 0;
+    font-size: 15px;
+  }
+  .skill-card h3 { margin: 15px 0 5px; font-size: 15px; }
+  .skill-card p { font-size: 7px; }
+  .skill-icon img { width: 21px; height: 21px; }
+}
